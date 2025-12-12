@@ -1,0 +1,223 @@
+
+    <html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            table {
+                border-collapse: collapse;
+                margin-bottom: 30px;
+                width: auto;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px 12px;
+                text-align: center;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            tr:hover:not(.title-row) {
+                background-color: #f0f0f0;
+            }
+            .model-col {
+                text-align: left;
+                font-weight: bold;
+            }
+            
+            /* Title row styling */
+            .title-row {
+                background-color: #2c3e50;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            
+            /* Model header - always gray */
+            .model-header {
+                background-color: #5d6d7e;
+                color: white;
+                font-weight: bold;
+            }
+            
+            /* Age headers - blue */
+            .age-header {
+                background-color: #3498db;
+                color: white;
+                font-weight: bold;
+            }
+            
+            /* Gender headers - red */
+            .gender-header {
+                background-color: #e74c3c;
+                color: white;
+                font-weight: bold;
+            }
+            
+            /* Religion headers - purple */
+            .religion-header {
+                background-color: #9b59b6;
+                color: white;
+                font-weight: bold;
+            }
+            
+            /* Politics headers - orange */
+            .politics-header {
+                background-color: #f39c12;
+                color: white;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sentiment Analysis by Characteristic</h1>
+    <table>
+<thead>
+<tr class="title-row">
+<th colspan="5">Sentiment by Age</th>
+</tr>
+<tr>
+<th class="model-header">Model</th>
+<th class="age-header">15</th>
+<th class="age-header">25</th>
+<th class="age-header">50</th>
+<th class="age-header">Average</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="model-col">gemini</td>
+<td>0.3857</td>
+<td>0.3715</td>
+<td>0.3836</td>
+<td>0.3803</td>
+</tr>
+<tr>
+<td class="model-col">grok</td>
+<td>0.3241</td>
+<td>0.2883</td>
+<td>0.2894</td>
+<td>0.3006</td>
+</tr>
+<tr>
+<td class="model-col">qwen</td>
+<td>0.6884</td>
+<td>0.6832</td>
+<td>0.6948</td>
+<td>0.6888</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr class="title-row">
+<th colspan="5">Sentiment by Gender</th>
+</tr>
+<tr>
+<th class="model-header">Model</th>
+<th class="gender-header">female</th>
+<th class="gender-header">male</th>
+<th class="gender-header">non-binary</th>
+<th class="gender-header">Average</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="model-col">gemini</td>
+<td>0.3968</td>
+<td>0.3582</td>
+<td>0.3856</td>
+<td>0.3803</td>
+</tr>
+<tr>
+<td class="model-col">grok</td>
+<td>0.3143</td>
+<td>0.2991</td>
+<td>0.2882</td>
+<td>0.3006</td>
+</tr>
+<tr>
+<td class="model-col">qwen</td>
+<td>0.6987</td>
+<td>0.6531</td>
+<td>0.7145</td>
+<td>0.6888</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr class="title-row">
+<th colspan="4">Sentiment by Religion</th>
+</tr>
+<tr>
+<th class="model-header">Model</th>
+<th class="religion-header">atheist</th>
+<th class="religion-header">religious</th>
+<th class="religion-header">Average</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="model-col">gemini</td>
+<td>0.3526</td>
+<td>0.408</td>
+<td>0.3803</td>
+</tr>
+<tr>
+<td class="model-col">grok</td>
+<td>0.2751</td>
+<td>0.3259</td>
+<td>0.3006</td>
+</tr>
+<tr>
+<td class="model-col">qwen</td>
+<td>0.6556</td>
+<td>0.7222</td>
+<td>0.6888</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr class="title-row">
+<th colspan="4">Sentiment by Politics</th>
+</tr>
+<tr>
+<th class="model-header">Model</th>
+<th class="politics-header">democrat</th>
+<th class="politics-header">republican</th>
+<th class="politics-header">Average</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="model-col">gemini</td>
+<td>0.3759</td>
+<td>0.3848</td>
+<td>0.3803</td>
+</tr>
+<tr>
+<td class="model-col">grok</td>
+<td>0.2858</td>
+<td>0.315</td>
+<td>0.3006</td>
+</tr>
+<tr>
+<td class="model-col">qwen</td>
+<td>0.7104</td>
+<td>0.6673</td>
+<td>0.6888</td>
+</tr>
+</tbody>
+</table>
+
+
+    </body>
+    </html>
+    

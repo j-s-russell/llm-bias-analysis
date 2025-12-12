@@ -1,0 +1,223 @@
+
+    <html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+            table {
+                border-collapse: collapse;
+                margin-bottom: 30px;
+                width: auto;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px 12px;
+                text-align: center;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            tr:hover:not(.title-row) {
+                background-color: #f0f0f0;
+            }
+            .model-col {
+                text-align: left;
+                font-weight: bold;
+            }
+            
+            /* Title row styling */
+            .title-row {
+                background-color: #2c3e50;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            
+            /* Model header - always gray */
+            .model-header {
+                background-color: #5d6d7e;
+                color: white;
+                font-weight: bold;
+            }
+            
+            /* Age headers - blue */
+            .age-header {
+                background-color: #3498db;
+                color: white;
+                font-weight: bold;
+            }
+            
+            /* Gender headers - red */
+            .gender-header {
+                background-color: #e74c3c;
+                color: white;
+                font-weight: bold;
+            }
+            
+            /* Religion headers - purple */
+            .religion-header {
+                background-color: #9b59b6;
+                color: white;
+                font-weight: bold;
+            }
+            
+            /* Politics headers - orange */
+            .politics-header {
+                background-color: #f39c12;
+                color: white;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Lexical Diversity (TTR) by Characteristic</h1>
+    <table>
+<thead>
+<tr class="title-row">
+<th colspan="5">Lexical Diversity (TTR) by Age</th>
+</tr>
+<tr>
+<th class="model-header">Model</th>
+<th class="age-header">15</th>
+<th class="age-header">25</th>
+<th class="age-header">50</th>
+<th class="age-header">Average</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="model-col">gemini</td>
+<td>0.67</td>
+<td>0.6728</td>
+<td>0.6723</td>
+<td>0.6717</td>
+</tr>
+<tr>
+<td class="model-col">grok</td>
+<td>0.715</td>
+<td>0.7178</td>
+<td>0.7157</td>
+<td>0.7162</td>
+</tr>
+<tr>
+<td class="model-col">qwen</td>
+<td>0.7157</td>
+<td>0.7177</td>
+<td>0.7161</td>
+<td>0.7165</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr class="title-row">
+<th colspan="5">Lexical Diversity (TTR) by Gender</th>
+</tr>
+<tr>
+<th class="model-header">Model</th>
+<th class="gender-header">female</th>
+<th class="gender-header">male</th>
+<th class="gender-header">non-binary</th>
+<th class="gender-header">Average</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="model-col">gemini</td>
+<td>0.6708</td>
+<td>0.6703</td>
+<td>0.6741</td>
+<td>0.6717</td>
+</tr>
+<tr>
+<td class="model-col">grok</td>
+<td>0.7171</td>
+<td>0.7174</td>
+<td>0.7141</td>
+<td>0.7162</td>
+</tr>
+<tr>
+<td class="model-col">qwen</td>
+<td>0.7153</td>
+<td>0.7163</td>
+<td>0.718</td>
+<td>0.7165</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr class="title-row">
+<th colspan="4">Lexical Diversity (TTR) by Religion</th>
+</tr>
+<tr>
+<th class="model-header">Model</th>
+<th class="religion-header">atheist</th>
+<th class="religion-header">religious</th>
+<th class="religion-header">Average</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="model-col">gemini</td>
+<td>0.6701</td>
+<td>0.6733</td>
+<td>0.6717</td>
+</tr>
+<tr>
+<td class="model-col">grok</td>
+<td>0.7156</td>
+<td>0.7168</td>
+<td>0.7162</td>
+</tr>
+<tr>
+<td class="model-col">qwen</td>
+<td>0.7164</td>
+<td>0.7166</td>
+<td>0.7165</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr class="title-row">
+<th colspan="4">Lexical Diversity (TTR) by Politics</th>
+</tr>
+<tr>
+<th class="model-header">Model</th>
+<th class="politics-header">democrat</th>
+<th class="politics-header">republican</th>
+<th class="politics-header">Average</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="model-col">gemini</td>
+<td>0.6712</td>
+<td>0.6722</td>
+<td>0.6717</td>
+</tr>
+<tr>
+<td class="model-col">grok</td>
+<td>0.7173</td>
+<td>0.7151</td>
+<td>0.7162</td>
+</tr>
+<tr>
+<td class="model-col">qwen</td>
+<td>0.7134</td>
+<td>0.7196</td>
+<td>0.7165</td>
+</tr>
+</tbody>
+</table>
+
+
+    </body>
+    </html>
+    
